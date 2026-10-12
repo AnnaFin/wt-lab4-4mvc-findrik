@@ -1,0 +1,15 @@
+@model wt_lab4_4mvc_findrik.Models.ItTask
+
+<div class="container py-4">
+    <div class="card shadow-sm rounded-4">
+        <div class="card-body">
+            <h2 class="card-title">@Model.Title</h2>
+            <p><strong>ID:</strong> @Model.Id</p>
+            <p><strong>Проект:</strong> @Model.ProjectName</p>
+            <p><strong>Приоритет:</strong> @Model.Priority</p>
+            <p><strong>Часы:</strong> @Model.EstimatedHours</p>
+            <p><strong>Выполнено:</strong> @(Model.IsCompleted ? "Да" : "Нет")</p>
+            <a asp-action="Index" class="btn btn-secondary">Назад к списку</a>
+        </div>
+    </div>
+</div>

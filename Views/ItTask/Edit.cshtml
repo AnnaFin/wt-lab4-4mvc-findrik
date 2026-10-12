@@ -1,0 +1,38 @@
+@model wt_lab4_4mvc_findrik.Models.ItTask
+
+<div class="container py-4">
+    <div class="card shadow-sm rounded-4">
+        <div class="card-body">
+            <h2 class="mb-4">Редактирование задачи</h2>
+            <form asp-action="Edit" method="post">
+                <input type="hidden" asp-for="Id" />
+                <div class="mb-3">
+                    <label asp-for="Title" class="form-label">Название</label>
+                    <input asp-for="Title" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label asp-for="ProjectName" class="form-label">Проект</label>
+                    <input asp-for="ProjectName" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Priority" class="form-label">Приоритет</label>
+                    <select asp-for="Priority" class="form-select">
+                        <option value="High">High</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Low">Low</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="EstimatedHours" class="form-label">Оценка (часы)</label>
+                    <input asp-for="EstimatedHours" class="form-control" />
+                </div>
+                <div class="form-check mb-3">
+                    <input asp-for="IsCompleted" class="form-check-input" />
+                    <label asp-for="IsCompleted" class="form-check-label">Выполнено</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Сохранить</button>
+                <a asp-action="Index" class="btn btn-secondary">Назад</a>
+            </form>
+        </div>
+    </div>
+</div>

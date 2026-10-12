@@ -1,0 +1,135 @@
+:root {
+    --soft-black: #252420;
+    --pumpkin-orange: #FC6911;
+    --orange-light: #ff8c42;
+}
+
+/* Общий фон и текст */
+body {
+    background-color: var(--pumpkin-orange) !important;
+    color: var(--soft-black) !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+/* Навигационная панель */
+.navbar {
+    background-color: var(--soft-black) !important;
+    border-bottom: 2px solid var(--soft-black);
+}
+
+.navbar-brand, .nav-link {
+    color: var(--pumpkin-orange) !important;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover, .nav-link:hover {
+    color: #ffffff !important;
+}
+
+/* Карточки (Задачи) */
+.card {
+    background-color: var(--soft-black) !important;
+    color: var(--pumpkin-orange) !important;
+    border: 1px solid var(--soft-black);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25) !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4) !important;
+}
+
+.card .text-muted {
+    color: #a09e9a !important; /* Светло-серый для второстепенного текста внутри чёрных карточек */
+}
+
+/* Кнопки */
+.btn-primary {
+    background-color: var(--soft-black) !important;
+    border-color: var(--soft-black) !important;
+    color: var(--pumpkin-orange) !important;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: var(--pumpkin-orange) !important;
+    border-color: var(--soft-black) !important;
+    color: var(--soft-black) !important;
+}
+
+.btn-secondary {
+    background-color: transparent !important;
+    border-color: var(--soft-black) !important;
+    color: var(--soft-black) !important;
+    font-weight: 600;
+}
+
+.btn-secondary:hover {
+    background-color: var(--soft-black) !important;
+    color: var(--pumpkin-orange) !important;
+}
+
+.btn-outline-primary {
+    color: var(--soft-black) !important;
+    border-color: var(--soft-black) !important;
+    font-weight: 600;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--soft-black) !important;
+    color: var(--pumpkin-orange) !important;
+}
+
+.btn-warning {
+    background-color: var(--soft-black) !important;
+    border-color: var(--soft-black) !important;
+    color: var(--pumpkin-orange) !important;
+}
+
+.btn-warning:hover {
+    background-color: var(--pumpkin-orange) !important;
+    border-color: var(--soft-black) !important;
+    color: var(--soft-black) !important;
+}
+
+/* Бейджи (ID и Приоритет) */
+.badge.bg-secondary, .badge.bg-info {
+    background-color: var(--pumpkin-orange) !important;
+    color: var(--soft-black) !important;
+    border: 1px solid var(--soft-black);
+    font-weight: bold;
+}
+
+/* Формы */
+.form-control, .form-select {
+    background-color: #ffffff !important;
+    border: 2px solid var(--soft-black) !important;
+    color: var(--soft-black) !important;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--soft-black) !important;
+    box-shadow: 0 0 0 0.25rem rgba(252, 105, 17, 0.5) !important;
+}
+
+.form-label {
+    color: var(--soft-black);
+    font-weight: 600;
+}
+
+/* Подвал */
+.footer {
+    background-color: var(--soft-black) !important;
+    color: var(--pumpkin-orange) !important;
+    border-top: none !important;
+    margin-top: auto;
+}
